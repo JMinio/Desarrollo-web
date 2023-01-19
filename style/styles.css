@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+body{
+    height: auto;
+    background-color:#F2DEBA;
+    height: auto;
+}
+
+/* CODIGO CSS DEL NAVBAR*/
+
+nav{
+    background-color: #222222;
+    padding: 8px 20px;
+    height: auto;
+}
+
+    nav ul{
+        list-style: none;
+        display: inline-block;
+    }
+    
+    nav ul li{
+        display: inline;
+        margin-left: 200px;
+    }
+    
+    nav ul li a{
+        color: rgb(187, 187, 187);
+        text-decoration: none;
+    }
+
+    nav ul li:hover a{
+        color: brown;
+    }
+
+    
+/* CODIGO DEL INDEX -- MAIN */
+
+/* LADO IZQUIERDO */
+.main{
+    width: 100%;
+    display: flex;
+    background-color: #495579;
+    padding: 10% 2% 0 10%;
+    height: 60vh;
+}
+
+.main .ladoIzquierdo{
+    width: 40%;
+}
+.main div h1{
+    display: inline;
+    font-size: 4em;
+}
+
+.main div p{
+    margin-top: 3%;
+    font-size: 1.5em;
+}
+
+.main div img{
+    width: 5%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+/* LADO DERECHO */
+.main .ladoDerecho{
+    width: 50%;
+}
+
+.main div span{
+    margin-left: 10%;
+    background-color: white;
+    color: BLACK;
+    width: 700px;
+    height: 45vh;
+    display: inline-block;
+}
+
+/* -------------------female + male-category------------------- */
+
+section table{
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+}
+
+.bgdark{
+    margin-top: 10%;
+    background-color: #222222;
+    color: white;
+    padding: 5px;
+    width: 50%;
+}
+/* -------------------contacto------------------- */
+
+.bienvenida{
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    height: 100px;
+    padding: 2%;
+    color: white;
+}
+
+.bienvenida h1{
+    letter-spacing: 5px;
+    font-size: 3em;
+}
+
+.contacto__form{
+    padding: 20px 40px;
+    height: 73vh;
+    display: flex;
+}
+
+.sucursales{
+    padding: 2%;
+    margin-left: 12%;
+}
+
+.sucursales ul{
+    list-style:none;
+}
+
+.sucursales h4{
+    font-size: 2em;
+}
+
+.sucursales ul li{
+    margin-bottom: 2%;
+}
+
+.sucursales ul li img{
+    width: 80%;
+}
+
+form div{
+    margin: 40px 30px;
+}
+
+form div #asunto{
+    margin-left: 10px;
+}
+
+input{
+    width: 500px;
+    background-color: grey;
+    border: 1px solid black;
+    margin-left: 10px;
+    padding: 5px;
+    color: white;
+}
+
+textarea{
+    width: 500px;
+    background-color: grey;
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+
+}
+
+.coments{
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* -------------------accesories------------------- */
+
+.novedad{
+    text-align: center;
+}
+
+.novedad h1{
+    margin: 1% 0 1% 0;
+    font-size: 3em;
+}
+
+.novedad div iframe{/* 
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+ */
+ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.novedad div p{
+    margin-top: 1%;
+}
+
+table{
+    margin: 4% 0 5% 5%;
+}
+
+table tr td{
+    text-align: center  ;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+table tr td div h1{
+    color: white;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+
+table tr td div ul li{
+    margin-top: 5px;
+    text-align: left;
+}
+
+div img{
+    width: 150px;
+}
+
+/* CODIGO CSS DEL FOOTER */
+
+footer{
+    background-color: #000000;
+    height: auto;
+    padding: 2% 0 2% 2%; 
+    text-align: center;
+}
+
+footer a{
+
+    margin-right:25px;
+    text-decoration: none;
+    color: cornsilk;
+    letter-spacing: 2px;
+}
+
+h3{
+    color: white;
+    letter-spacing: 3px;
+}
+
+.icons{
+    width: 30px;
+    background-color: cornsilk;
+    border-radius: 10px;
+}
