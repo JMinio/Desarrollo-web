@@ -87,12 +87,12 @@ nav{
 
 /* -------------------female + male-category------------------- */
 
-section table{
+/* section table{
     margin-left: 10%;
     width: 80%;
     height: 100%;
 }
-
+ */
 .bgdark{
     margin-top: 10%;
     background-color: #222222;
@@ -100,6 +100,35 @@ section table{
     padding: 5px;
     width: 50%;
 }
+
+/* table{
+    margin: 4% 0 5% 5%;
+}
+
+table tr td{
+    text-align: center  ;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+table tr td div h1{
+    color: white;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+
+table tr td div ul li{
+    margin-top: 5px;
+    text-align: left;
+}
+
+ */
+@media (max-width:600px){
+
+}
+
 /* -------------------contacto------------------- */
 
 .bienvenida{
@@ -195,28 +224,6 @@ textarea{
     margin-top: 1%;
 }
 
-table{
-    margin: 4% 0 5% 5%;
-}
-
-table tr td{
-    text-align: center  ;
-    background-color: white;
-    padding: 40px;
-    border: 1px solid black;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-table tr td div h1{
-    color: white;
-    letter-spacing: 5px;
-    padding: 20px;
-}
-
-table tr td div ul li{
-    margin-top: 5px;
-    text-align: left;
-}
 
 div img{
     width: 150px;
