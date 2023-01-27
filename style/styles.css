@@ -19,6 +19,7 @@ nav{
     background-color: #222222;
     padding: 8px 20px;
     height: auto;
+    color: white;
 }
 
     nav ul{
@@ -87,14 +88,7 @@ nav{
 
 /* -------------------female + male-category------------------- */
 
-.galeria{
-    display:grid;
-    grid-template-columns: ;
-}
 
-@media (max-width:600px){
-
-}
 
 /* -------------------contacto------------------- */
 
