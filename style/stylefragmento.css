@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    height: 10vh;
+    background-color: #222;
+    padding: 1% 1% 1% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    width: 30%;
+}
+
+nav a img{
+    width: 60%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+} 
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color:white;
+    margin-left: 15px;
+    background-image: linear-gradient(currentColor,currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+nav ul li a:hover{
+    color: burlywood;
+    font-weight: 600;
+    background-size: 100% 2px;
+}
+
+main{
+    background: linear-gradient(-95deg, #020202, rgb(131, 10, 10));
+}
+
+
+/* --------------------MAIN-------------------- */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 1.3em;
+}
+
+main .welcoming{
+    padding:5%;
+    color: white;
+}
+
+main div h1{
+    margin-bottom: 5%;
+}
+
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-a {
+    grid-area: fotoA;
+}
+
+.foto-b {
+    grid-area: fotoB;
+}
+
+.foto-c{
+    grid-area: fotoC;
+}
+
+.foto-d {
+    grid-area: fotoD;
+}
+
+.foto-e{
+    grid-area: fotoE;
+}
+
+.foto-f {
+    grid-area: fotoF;
+}
+
+#galery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 300px);
+    grid-template-areas: "fotoA" "fotoB" "fotoC" "fotoD" "fotoE" "fotoF";
+    margin: 1%;
+}
+
+@media (max-width:600px){
+    nav{
+        height: auto;
+    }
+}
+
+@media (min-width:600px) {  /* EN RESOLUCIONES BAJAS VOY A PONER EL BOTON DE HAMBURGUESA */
+
+    nav{
+        height: 15vh;
+    }
+    
+    h1{
+        font-size: 2em;
+        margin-top: 5%;
+    }
+
+    main div .videos{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    #galery{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,400px);
+        grid-template-areas: 
+        "fotoA fotoB fotoC"
+        "fotoA fotoD fotoE"
+        "fotoA fotoF fotoF";
+        gap: 10px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15vhw;
+    }
+    nav a{
+        width: 10%;
+    }
+    nav ul li{
+        margin-right: 30px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    .welcoming{
+        font-size: 2em;
+    }
+
+    main .container{
+        margin: 0;
+
+    }
+
+    main div .videos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    #galery{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3,32vh);
+        grid-template-areas: 
+        "fotoA fotoB fotoC"
+        "fotoA fotoD fotoC"
+        "fotoA fotoE fotoF";
+        gap: 10px;
+    }
+
+    main img{
+        filter: grayscale();
+    }
+    main img:hover{
+        filter: none;
+        transition: all 1s;
+    }
+}
+
+@media (min-width:1920px){
+    
+    nav {
+        height: auto;
+    }
+    nav a{
+        width: 30%;
+    }
+    nav a img{
+        width: 20%;
+    }
+    nav ul{
+        width: 60%;
+    }
+    nav ul li{
+        margin-left: 6%;
+    }
+    nav ul li a{
+        font-size: 1.1em;
+    }
+
+    main div iframe{
+        height: 60vh;
+    }
+
+    main #galery{
+        height: 100vh;
+    }
+
+    main .welcoming{
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+}
+
+/*--------------------------- CODIGO DEL FOOTER ---------------------------*/
+/* LADO IZQUIERDO */
+footer {
+    background-color: #222;
+    color: aliceblue;
+}
+
+footer .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+    footer .descripcion{
+        margin: 5% 0% 0 15%;
+    }
+
+        footer .descripcion ul {
+            list-style: none;
+            margin-right: 150px;
+        }
+        footer .descripcion ul LI{
+            margin: 10px 0 10px 0;
+        }
+
+
+/* LADO DERECHO */
+    
+    footer .redes{
+        margin: 0% 15% 0 15%;
+        font-size: 15px;
+    }
+
+        article .instagram,.facebook,.twitter{
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .instagram,.facebook,.twitter p{
+            align-items: center;
+        }
+
+        .twitter p{
+            margin-top: 5px;
+        }
+
+.icons{
+        width: 30px;
+        background-color: cornsilk;
+        border-radius: 10px;
+        margin-right: 15px;
+    }
+
+    @media (min-width:1920px){
+        
+        footer {
+            height:AUTO;
+        }
+
+        footer article h2{
+            margin-bottom: 2vh;
+        }
+
+        footer{
+
+        } 
+}
